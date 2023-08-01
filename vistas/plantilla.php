@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html >
 <head>
     <meta charset="utf-8">
    
@@ -11,25 +11,30 @@
     ?>
 
 	
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $url; ?>vistas/assets/img/favicon.ico">
-
-    <!-- CSS here -->
-    <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/bootstrap.min.css">
    
-    
+    <link rel="icon" href="<?php echo $url; ?>vistas/assets/images/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/colors.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="<?php echo $url; ?>vistas/assets/css/custom.css" />
    
     
 </head>
 
-<body>
-  <input type="hidden" value="<?php echo $url;
-  session_start();
-  $_SESSION['ruta']=$url;
-  ?>" name="ruta_url" id="ruta_url">
-
-
-
-
+<body class="dashboard dashboard_1">
+<div class="full_container">
+         <div class="inner_container">
+ 
 <?php
 
 /*=============================================
@@ -98,7 +103,8 @@ include "modulos/footer.php";
 
 ?>
 
-
+</div>
+      </div>
 
 
     <script src="<?php echo $url; ?>vistas/assets/js/vendor/modernizr-3.5.0.min.js"></script>
